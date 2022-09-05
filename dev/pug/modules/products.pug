@@ -1,0 +1,43 @@
+nav.breadcrumb-mobile 
+    ul 
+        li 
+            a(href='#') главная
+        li 
+            a(href='#') продукты
+        li 
+            a(href='#') краски
+h1.products_title_mobile Краски
+.products
+    .products_filters#products_filters
+        div
+            input(type="checkbox" id="new")
+            label(for="new") Новинки
+        div
+            input(type="checkbox" id="available")
+            label(for="available") Есть в наличии
+        div
+            input(type="checkbox" id="contract")
+            label(for="contract") Контрактные
+        div
+            input(type="checkbox" id="exclusive")
+            label(for="exclusive") Эксклюзивные
+        div
+            input(type="checkbox" id="sale")
+            label(for="sale") Распродажа
+    .products_list 
+        .products_list_helpers
+            p.helpers_number#helpers_number 0 товаров
+            .helpers_filters_mobile#mobile-filter Фильтры
+            .helpers_sorting
+                .custom-dropdown#custom_dropdown
+                    input(type="radio", id="sort_expensive" name="dropdown" class="custom-input" checked)
+                    label(for="sort_expensive") Сначала дорогие
+                    input(type="radio", id="sort_cheap" name="dropdown" class="custom-input")
+                    label(for="sort_cheap") Сначала недорогие
+                    input(type="radio", id="sort_recent" name="dropdown" class="custom-input")
+                    label(for="sort_recent") Сначала популярные
+                    input(type="radio", id="sort_new" name="dropdown" class="custom-input")
+                    label(for="sort_new") Сначала новые
+        ul.products_items#products_items
+            //- getting products from .js file
+

@@ -1,0 +1,21 @@
+.cart#cart
+    .cart_wrapper
+        .cart_header 
+            h1 Корзина
+            button#cart_close
+                svg(width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg") 
+                    path(d="M13 1L1 13" stroke="#1F2020" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round")
+                    path(d="M1 1L13 13" stroke="#1F2020" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round")
+        .cart_content
+            .cart_content__header
+                p#number_of_products_in_cart Корзина пуста
+                button#cart_clear очистить список
+            .cart_products#cart_products
+                //- products getting from .js file 
+        .cart_footer 
+            .total__price
+                p Итого
+                h1#total__price 0₽
+            .order__btn#order_btn
+                btn Оформить заказ 
+                    
